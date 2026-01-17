@@ -18,3 +18,5 @@
 9. `git log` -> list downs all the commits of the repository. If you want to log prompt press `q`
 
 10. `git restore <file>` -> It removes all files changes from the staging area to be committed. This can be useful, if we did some dirty piece of code and now no more want it. Instead of deleting every change line by line, we can restore it or you can say restore last clean version of the file.
+
+11. `git restore --staged <file>` -> it removes file from changes from staging area to working area. This only words if changes are in your staging area.
