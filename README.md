@@ -44,3 +44,9 @@ Note: The name of the remote connections is always used to establish communicati
 
 21. `git add . ` : this command will add all the files from working area to staging area 
 
+### Recommended practice to do
+ - make changes
+ - git add <file>
+ - git commit 
+ - git pull
+ - git push 
