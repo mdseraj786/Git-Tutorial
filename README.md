@@ -21,12 +21,12 @@
 
 11. `git restore --staged <file>` -> it removes file from changes from staging area to working area. This only words if changes are in your staging area.
 
-12. Difference between git rm and git
-ans: If you want to the whole file back to the untracked state, then we do git rm, otherwise if we just want the changes to be moved in working area or staging area then we git restore.
+12. `Difference between git rm and git remove`
+ans: If you want to the whole file back to the untracked state, then we do git rm, otherwise if we just want the changes to be moved in working area or staging area then we use git restore.
 
 13. `git diff commit1 commit2` -> gives the difference of all the file changes between two commits
 
-14. `git commit -m "your commit message>" -> If we want to avoid opening a text editor like vim/namo to add commit message we use this command.
+14. `git commit -m "your commit message>"` -> If we want to avoid opening a text editor like vim/namo to add commit message we use this command.
 
 15. `git remote` -> list down all the remote connection name
 
