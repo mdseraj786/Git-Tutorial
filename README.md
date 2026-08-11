@@ -14,6 +14,7 @@
 7. `commit` -> Commit is a perticular version of the project. It captures a snapshot of the project's staged changes and creates a version out of it. 
 
 8. `git commit` -> registers staging changes to a commit
+8. `git commit --amend` -> aappend commit to last commit not create another commit, but commit id will changes due to hashing because date are changes that why
 
 9. `git log` -> list downs all the commits of the repository. If you want to log prompt press `q`
 
@@ -64,6 +65,31 @@ Merge conflicts can occure if multiple people try to make change to the same fil
 - a peace of code that you want to store somewhere but you don't want to be the part of the next commit.
 - add file into staging area and hit the command `git stash` all the staging are content goes into stash.
 
-- If you want to back the content use `git stash apply` it gives back latest stash, but I you want to back some specific stash then use `git stash apply(1)`.
+- If you want to back the content use `git stash apply` it gives back latest stash, but I you want to back some specific stash then use `git stash apply stash@(1)`.
 - `git stash show stash@{0}` -> if you want to see the date store in the stash
+
+- there can be multiple stashes are created 
+- stashes are not going to create for the untracked file, they will only created for changes happened in tracked file(staging area). (in staging area or changes in staging are content)
+- `git stash list ` -> show the list of the stashes
+- everytime you create a stash it create new version of stash changes, 
+if you want to apply a perticular version then you mentioned which version you want to apply
+-  if you are try to apply 2 stash version that are going to change a single line, untill and unless you commited it won't even apply, or if it commited it gives merge conflict
+
+- `git stash --include-untracked` -> untracked file also be the part of stash
+- `git stash --include-untracked -- <filename> ` -> for the specific file
+
+- `git stash --all` -> for all the file
+- `git stash pop` -> work like apply but also remove/drop the last stash
+
+- `git stash drop` -> drop/remove last stash
+- `git stash drop stash@{2}`
+
+- `git stash clear` -> drop all the stash
+
+- `git stash save "saving code.cpp"`  -> giving meaningful name to stash
+- `git stash save "saving new_file.cpp" --include-untracked` -> uses for untracked file 
+
+- `Note: `latest stash is stash@{0}
+
+---
 
