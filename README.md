@@ -56,3 +56,14 @@ Note: The name of the remote connections is always used to establish communicati
 
 
 Merge conflicts can occure if multiple people try to make change to the same file, and then collaborate.
+
+---
+### Stash 
+- it is a locker that store the content so that it will not be the part of the next commit.
+- it follows LIFO to maintain the stash
+- a peace of code that you want to store somewhere but you don't want to be the part of the next commit.
+- add file into staging area and hit the command `git stash` all the staging are content goes into stash.
+
+- If you want to back the content use `git stash apply` it gives back latest stash, but I you want to back some specific stash then use `git stash apply(1)`.
+- `git stash show stash@{0}` -> if you want to see the date store in the stash
+
