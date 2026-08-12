@@ -93,3 +93,42 @@ if you want to apply a perticular version then you mentioned which version you w
 
 ---
 
+### Branch
+- Everyone called branch is a parallel timeline that you preparing another branch. - for understanding and visualizing this is good
+- but in technical they are just - pointer to a commit
+
+- `git checkout -b <name>` -> create ne branch, it is just a new commit on that same commit and latter adding child commit makes it branch
+
+
+- <b> Head </b>  - it tells you that what branch you are working on and what's the current commit is. ---   head moves when you change the branch or commit new changes 
+
+<b> first commit </b>  <-- second commit <--- (main branch)  <---  head 
+
+- after creating the new branch feature_branch create on second commit and then head point to the feature_branch
+
+ 
+first <-- second <-- main branch <br>
+ &emsp;&emsp;&emsp;&emsp;&emsp;   ^ <br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;               |
+  <br>
+   &emsp;&emsp;&emsp;&emsp;&emsp;             feature_branch <---head 
+
+   - if you commit on feature_branch third commit point to sencond commit and feature_branch or head move to the third commit
+
+   - ``git reflog`` --- log history
+   git log --graph  -> visual branch view
+- `git log --all --decorate --oneline --graph` -> see the graph like structure
+
+- `git log --since="yesterday"  or -- since="10 minute ago"` etc use for loggin
+- `git log --grep=2nd`   -> use regex to match the commit message
+- `git log --since=10.minutes`
+
+#### Tag
+- tag is also a pointer, it points a perticular commit, you can store come metadata in tag
+
+- `diff bt branch and tag` -> branch chanes after new commit but tag doesn't 
+
+- `git tag -a v1 -m "tag 1"`  -> create tag
+- `git show v1` -> show tag details
+- `git push --tags origin main` -> push your tags on github
+- `git show-ref --tags`  -> show all of the tags
