@@ -122,7 +122,8 @@ first <-- second <-- main branch <br>
 - `git log --since="yesterday"  or -- since="10 minute ago"` etc use for loggin
 - `git log --grep=2nd`   -> use regex to match the commit message
 - `git log --since=10.minutes`
-
+- `git log <commitId>^1 ` ->  ^n -- it gives your nth parent
+- `git log <commitId>~1  ->   ~n -- it gives you nth ancestory
 #### Tag
 - tag is also a pointer, it points a perticular commit, you can store come metadata in tag
 
