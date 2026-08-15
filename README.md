@@ -246,4 +246,4 @@ note - go to that branch that you want to actually merge
 
 - `git fetch origin <branch_name>`  => fetch branch created by team 
 1. create the same branch at local , then pull from GitHub using pull command
-2. git fetch origin <branch_name> 
+2. git fetch origin <branch_name>    
